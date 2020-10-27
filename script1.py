@@ -2,9 +2,9 @@ from flask import Flask, render_template #importing flask class obj from flask l
 
 app = Flask(__name__) #instantiating the class/obj
 
-# @app.route('/') #these are the routes you are directing through the URL like rails routing 
-# def home():
-#     return render_template("home.html")
+@app.route('/') #these are the routes you are directing through the URL like rails routing 
+def home():
+    return render_template("home.html")
 
 # @app.route('/about')
 # def about():
